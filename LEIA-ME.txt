@@ -1,0 +1,9 @@
+PROJETO PARA OS ALUNOS
+
+1. Crie um novo projeto no BlueJ.
+2. Copie ENUNCIADO.md e .gitignore para a pasta do projeto.
+3. Crie as classes ExploradorGalactico e Teste.
+4. Compile e execute Teste.main().
+5. Confirme no terminal quais os testes que passaram ou falharam.
+
+O ficheiro .gitignore está incluído, embora possa ficar oculto no Finder do macOS.
