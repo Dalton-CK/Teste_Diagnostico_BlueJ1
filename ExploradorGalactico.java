@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+
 public class ExploradorGalactico
 {
     private String NomeCodigo;
@@ -6,15 +7,15 @@ public class ExploradorGalactico
     private int Nivel;
     private int Energia;
     private boolean Ativo;
-    ArrayList<String> Equipamentos = new ArrayList<String>();
+    private ArrayList<String> Equipamentos;
     
     public ExploradorGalactico(){
-        NomeCodigo = "Sem nome";
-        PlanetaOrigem = "Terra";
-        Nivel = 1;
-        Energia = 100;
-        Ativo = true;
-        Equipamentos = new ArrayList<>();
+        this.NomeCodigo = "Sem nome";
+        this.PlanetaOrigem = "Terra";
+        this.Nivel = 1;
+        this.Energia = 100;
+        this.Ativo = true;
+        this.Equipamentos = new ArrayList<String>();
     }
     
     public ExploradorGalactico(String nomeCodigo, String planetaOrigem, int nivel, int energia, boolean ativo){
@@ -23,45 +24,58 @@ public class ExploradorGalactico
         this.Nivel = nivel;
         this.Energia = energia;
         this.Ativo = ativo;
-        this.Equipamentos = Equipamentos;
+        this.Equipamentos = new ArrayList<String>();
     }
+    
     //nomeCodigo
     public String getNomeCodigo() {
-        return NomeCodigo;
+        return this.NomeCodigo;
     }
+    
     public void setNomeCodigo(String NomeCodigo) {
-    if (NomeCodigo != null && !NomeCodigo.isEmpty()) {
-        this.NomeCodigo = NomeCodigo;
+        if (NomeCodigo != null && !NomeCodigo.isEmpty()) {
+            this.NomeCodigo = NomeCodigo;
+        }
     }
-}
+    
     //planetaOrigem
     public String getPlanetaOrigem() {
-        return PlanetaOrigem;
+        return this.PlanetaOrigem;
     }
+    
     public void setPlanetaOrigem(String PlanetaOrigem){
         if (PlanetaOrigem != null && !PlanetaOrigem.isEmpty()) {
             this.PlanetaOrigem = PlanetaOrigem;
         }
     }
+    
     //nivel
     public int getNivel() {
-        return Nivel;
+        return this.Nivel;
     }
+    
     public void setNivel(int Nivel) {
         if(Nivel >=1){
             this.Nivel = Nivel;
         }
     }
-    //energia
+    
+    //energia  
     public int getEnergia() {
-        return Energia;
+        return this.Energia;
     }
+    
     public void setEnergia(int Energia) {
-        if(Energia >= 0 && Energia <= 100){
+        if(Energia >= 0 || Energia <= 100){
             this.Energia = Energia;
-        }
+        } 
     }
-    public void adicionarEquipamento(String equipamento) {
-        Equipamentos.add(equipamento);
+    
+    public void getEquipamentos(String Equipamentos){
+        this.Equipamentos.add(Equipamentos);
+    }
+    
+    public boolean verificarEquipamentos(String Equipamentosverificar){
+        this.Equipamentos.content
     }
 }

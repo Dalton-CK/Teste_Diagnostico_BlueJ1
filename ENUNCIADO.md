@@ -24,12 +24,12 @@ O atributo `equipamentos` guarda os nomes dos equipamentos que o explorador leva
 Implementa dois construtores:
 
 1. Um construtor sem parâmetros que cria um explorador com os seguintes valores:
-   - nome de código: `Sem nome`;
-   - planeta de origem: `Terra`;
-   - nível: `1`;
-   - energia: `100`;
-   - ativo: `true`;
-   - lista de equipamentos vazia.
+- nome de código: `Sem nome`;
+- planeta de origem: `Terra`;
+- nível: `1`;
+- energia: `100`;
+- ativo: `true`;
+- lista de equipamentos vazia.
 
 2. Um construtor que recebe `nomeCodigo`, `planetaOrigem`, `nivel`, `energia` e `ativo`. A lista de equipamentos deve ser criada vazia dentro do construtor.
 
